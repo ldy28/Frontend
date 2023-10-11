@@ -10,7 +10,7 @@ const Player = () => {
   const [list, setList] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:3000/Player.json")
+    axios.get("http://15.164.102.254:3000/Player.json")
       .then((res) => {
         // console.log(res.data.list);
         setList(res.data.list)
